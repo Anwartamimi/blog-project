@@ -7,4 +7,7 @@
 <p>{{ post.body }}</p>
 </div>
 
+<a href="{% url 'post-edit' post.pk %}">+ Edit Post</a>
+<a href="{% url 'post-delete' post.pk %}">+ Delete Post</a>
+
 {% endblock content %}
